@@ -13,4 +13,4 @@
 ```
 ## Acknowledgement
 
-The authors are thankful to Louis Sterker and Erik Prescher whose help resulted in this dataset.
+The authors are thankful to [Louis Sterker](https://github.com/enilois) and [Erik Prescher](https://github.com/ErikPre) whose help resulted in this dataset.
