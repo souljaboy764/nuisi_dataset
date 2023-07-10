@@ -25,9 +25,9 @@ def rotation_normalization(skeleton):
 	rightShoulder = skeleton[7]
 	waist = skeleton[3]
 	
-	yAxisHelper = rightShoulder - waist
-	xAxis = rightShoulder - leftShoulder # Should be right to left but something is wrong with the data/preproc
-	yAxis = np.cross(yAxisHelper, xAxis) # out of the human(like an arrow in the back)
+	xAxisHelper = waist - rightShoulder
+	yAxis = leftShoulder - rightShoulder # Should be right to left but something is wrong with the data/preproc
+	xAxis = np.cross(xAxisHelper, yAxis) # out of the human(like an arrow in the back)
 	zAxis = np.cross(xAxis, yAxis) # like spine, but straight
 	
 	xAxis /= np.linalg.norm(xAxis)
@@ -124,7 +124,7 @@ for a in range(len(actions)):
 			cropped_trajs_[-1].append(traj[crop_idx[idx]:crop_idx[idx+1],joints_idx]) # remove the :3 if the quaternions are needed (unlikely)
 
 		assert(len(cropped_trajs_[-1])==n_demos)
-	plt.show()
+	# plt.show()
 	cropped_trajs = []
 	cropped_trajs_downsampled = []
 	for n in range(n_demos):
@@ -144,4 +144,4 @@ for a in range(len(actions)):
 train_data=np.array(train_data,dtype=object)
 test_data=np.array(test_data,dtype=object)
 
-np.savez_compressed('labelled_sequences.npz', train_data=train_data, train_labels=train_labels, test_data=test_data, test_labels=test_labels)
+np.savez_compressed('nuisi_dataset.npz', train_data=train_data, train_labels=train_labels, test_data=test_data, test_labels=test_labels)
