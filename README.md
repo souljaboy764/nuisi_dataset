@@ -1,9 +1,8 @@
 # NuiSI Dataset
 **Nui**track **S**keleton **I**nteraction Dataset of Physical Human-Human Interactions
 
-Coming Soon...
+## Citation
 
-# Citation
 ```latex
 @inproceedings{prasad2022mild,
   title={MILD: Multimodal Interactive Latent Dynamics for Learning Human-Robot Interaction},
@@ -12,3 +11,6 @@ Coming Soon...
   year={2022}
 }
 ```
+## Acknowledgement
+
+The authors are thankful to [Louis Sterker](https://github.com/enilois) and [Erik Prescher](https://github.com/ErikPre) whose help resulted in this dataset.
