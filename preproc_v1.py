@@ -67,7 +67,7 @@ for a in range(len(actions)):
 	s1 = starts1[a]
 	s2 = starts2[a]
 	n_demos = num_demos[a]
-	data1 = np.load('data/'+action+'_agent1.bag.npz',allow_pickle=True)
+	data1 = np.load('data_v1/'+action+'_agent1.bag.npz',allow_pickle=True)
 	trajs_1 = data1['arr_0'] # Nx10x7 : x, y, z, qx, qy, qz, qw
 	T1 = np.eye(4)
 	T1[:3,3] = trajs_1[0,7,:3]
