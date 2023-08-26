@@ -1,4 +1,5 @@
 # NuiSI Dataset
+
 **Nui**track **S**keleton **I**nteraction Dataset of Physical Human-Human Interactions
 
 ## Citation
@@ -11,6 +12,7 @@
   year={2022}
 }
 ```
+
 ## Acknowledgement
 
-The authors are thankful to [Louis Sterker](https://github.com/enilois) and [Erik Prescher](https://github.com/ErikPre) whose help resulted in this dataset.
+The authors are thankful to [Louis Sterker](https://github.com/enilois), [Erik Prescher](https://github.com/ErikPre) and [Sven Schultze](https://github.com/svenschultze) whose help resulted in this dataset.
