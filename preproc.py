@@ -74,7 +74,7 @@ trajectory_idx = {
 				[1800,2095],
 				[2140,2420],
 				[2440,2690],
-				[2720,2970],
+				# [2720,2970],
 				[3030,3240],
 				[3260,3490],
 				[3510,3720],
@@ -148,6 +148,7 @@ for a in range(len(actions)):
 
 		seq_len = s[1] - s[0]
 		trajs_a.append(np.concatenate([p1.reshape((seq_len, -1)), p2.reshape((seq_len, -1))], axis=-1))
+
 
 	train_split = int(0.8*len(trajs_a))
 	train_data += trajs_a[:train_split]
