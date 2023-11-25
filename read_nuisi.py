@@ -1,5 +1,4 @@
 import numpy as np
-from visualize import mypause
 
 def rotation_normalization(skeleton):
 	leftShoulder = skeleton[6]
